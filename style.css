@@ -1,0 +1,177 @@
+.blur {
+    filter: blur(2px);
+  }
+body {
+  background-color: black;
+}
+.additem {
+  color: white;
+}
+.backitem {
+  color: white;
+
+}
+.box {
+  position: relative;
+  border: 2px solid black;
+  min-height: 300px;
+  width: 200px;
+  margin: 25px;
+  border-radius: 10px;
+  font-size: 25px;
+  text-align: center;
+  font-weight: lighter;
+  color: rgb(7, 25, 37);
+  background-color: white;
+}
+.button-box {
+  /*border: 2px solid black; */
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+}
+.button-box i {
+  /*border: 2px solid black; */
+  padding: 0.5rem;
+}
+.done-button {
+  background-color: rgb(81, 81, 247);
+  border: 1px solid black;
+  border-radius: 4px;
+  color: white;
+}
+
+hr {
+  margin-left: 35px;
+}
+
+.pending_checkbox {
+  color: black;
+  font-size: 20px;
+  font-weight: 400;
+}
+.box2 {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  flex-wrap: wrap;
+  width: 75vw;
+  margin: auto;
+  color: white;
+}
+.box1 {
+  display: flex;
+  grid-template-columns: auto auto;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 65vw;
+  margin: auto;
+  margin-top: 150px;
+}
+.leftside {
+  display: inline-block;
+  font-size: 60px;
+  font-weight: lighter;
+  color: white;
+}
+.rightside {
+  display: inline-block;
+  text-align: right;
+  font-size: 40px;
+  font-weight: lighter;
+  padding: 1.3rem;
+}
+i {
+  color: royalblue;
+  cursor: pointer;
+}
+.popup-box {
+  border: 2px solid royalblue;
+  border-radius: 10px;
+  width: 75vw;
+  max-width: 350px;
+  text-align: center;
+  font-family: Roboto, sans-serif;
+  padding: 2.5rem;
+  font-size: 20px;
+  background-color: white;
+  position: absolute;
+  top: 35%;
+  left: 35%;
+  z-index: 2;
+}
+.task {
+  margin: 0.5rem;
+}
+.task-text {
+  padding: 0.5rem;
+  font-size: 25px;
+  color: black;
+}
+#box-heading{
+  cursor: pointer;
+  font-size: 35px;
+}
+
+input{
+  border-radius: 5px;
+  width: 70%;
+  max-width: 270px;
+  height: 35px;
+  box-shadow: 5px 3px 10px rgb(202, 197, 197);
+  border: 1px solid black;
+  display: block;
+  margin: auto;
+}
+.popup-box-button {
+  width: 80px;
+  height: 35px;
+  font-size: 16px;
+  background-color: rgb(7, 25, 37);
+  color: white;
+  border: 0px;
+  border-radius: 20px;
+  cursor: pointer;
+  display: inline-block;
+  padding: 8px;
+  margin: 15px;
+  box-sizing: border-box;
+}
+.box-1 {
+  padding: 25px 70px;
+  margin: auto;
+}
+.hide {
+  display: none;
+}
+.add-button {
+  float: right;
+  position: relative;
+  top: 125px;
+  left: 50px;
+}
+.hr-1, .hr-2 {
+  width: 150px;
+  position: relative;
+}
+.hr-1 {
+  right: 200px;
+  top: 80px;
+}
+.hr-2 {
+  left: 300px;
+  bottom: 70px;
+}
+.box3 {
+  font-size: 30px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  display: flex;
+  visibility: hidden;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  left: 20rem;
+  right: 20rem;
+  top:3rem;
+}
