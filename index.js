@@ -10,6 +10,7 @@ icnbtn.addEventListener("click", () => {
   const addBtn = document.createElement("div");
   const closeBtn = document.createElement("div");
 
+  //Opening main/popup box, will blur background
   document.querySelector(".mainbox1").classList.add("blur");
   popup.appendChild(popupbox);
   popupbox.className = "popup-box";
@@ -22,11 +23,13 @@ icnbtn.addEventListener("click", () => {
   addBtn.innerText = "Add";
   closeBtn.innerText = "Close"; 
 
+  //Appending child to one div
   popupbox.appendChild(popHeading);
   popupbox.appendChild(popInput);
   popupbox.appendChild(addBtn);
   popupbox.appendChild(closeBtn);
   
+  //For displaying box
   addBtn.addEventListener("click", () => {
       document.getElementById("maintext").style.display="none";
       const box = document.createElement("div");
@@ -40,6 +43,8 @@ icnbtn.addEventListener("click", () => {
       boxHeading.id="box-heading";
       box.className = "box";
       const box2=document.querySelector(".box2");
+
+      //Appending all child to div
       box2.appendChild(box);
       box.appendChild(boxHeading);
       box.appendChild(boxicon);
@@ -47,6 +52,7 @@ icnbtn.addEventListener("click", () => {
       boxicon.appendChild(deleteBtn);
       boxHeading.innerText = popInput.value;
 
+      //Creating 2page for individual box
       boxHeading.addEventListener('click',()=>{
         const heading=document.getElementById("heading");
         heading.innerText=boxHeading.innerText;
@@ -69,7 +75,8 @@ icnbtn.addEventListener("click", () => {
         })
       })
 
-      boxHeading.style.borderBottom = "1px solid black";
+      //Inside box after clicking add button
+      boxHeading.style.borderBottom = "2px solid royalblue";
       popup.removeChild(popupbox);
       document.querySelector(".mainbox1").classList.remove("blur");
       deleteBtn.addEventListener("click", () => {
@@ -79,8 +86,7 @@ icnbtn.addEventListener("click", () => {
         }
       });
 
-    
-
+      //Repeating the process
       add.addEventListener("click", () => {
         const popupbox = document.createElement("div");
         const popHeading = document.createElement("p");
@@ -124,6 +130,7 @@ icnbtn.addEventListener("click", () => {
           }
         });
 
+        //For deleting/closing box
         closeBtn.addEventListener("click", () => {
           popup.removeChild(popupbox);
           document.querySelector(".mainbox1").classList.remove("blur");
@@ -131,6 +138,7 @@ icnbtn.addEventListener("click", () => {
       });
   });
 
+  //For deleting/closing box
   closeBtn.addEventListener("click", () => {
     popup.removeChild(popupbox);
     document.querySelector(".mainbox1").classList.remove("blur");
